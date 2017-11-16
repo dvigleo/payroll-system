@@ -50,13 +50,13 @@ public class sistNomina {
             System.out.println("El numero de nomina para el trabajador " + (cont + 1) + " es: " + arreglo[cont][0]);           
         }
 
-        for (int trab = 0; trab < nTrabajadores; trab++) {
-            System.out.println("Trabajador con nomina: " + arreglo[trab+1][0]);
+        for (int trab = 1; trab < nTrabajadores; trab++) {
             for (int row = 1; row <= nTrabajadores; row++) {
+            	System.out.println("\nTrabajador con nomina: " + arreglo[trab+1][0]);
                 for (int col = 0; col < 12	; col++) {
                     switch (col) {
                         case 0:
-                            System.out.println(arreglo[row][0]);
+                            //System.out.println(arreglo[row][0]);
                             break;
                         case 1:
                             System.out.print("NOMBRE: ");
@@ -84,7 +84,7 @@ public class sistNomina {
                             arreglo[row][5] = sueldoB;
                             break;
                         case 6:
-                            System.out.print("FECHA DE INGRESO (121212): ");
+                            System.out.print("FECHA DE INGRESO (311212): ");
                             String fechaIng = lectura.next();
                             arreglo[row][6] = fechaIng;
                             break;
@@ -120,9 +120,10 @@ public class sistNomina {
             }
         }
 
+        //impresion arreglo
         for(int row = 0; row <= nTrabajadores; row++){
         	for(int column = 0; column < 12 ; column ++){
-        		System.out.print("|" +arreglo[row][column]+ "|\t  \t");
+        		System.out.print("|" +arreglo[row][column]+ "|\t       \t");
         	}
         	System.out.println();
         }
