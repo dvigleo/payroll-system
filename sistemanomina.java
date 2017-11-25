@@ -108,7 +108,7 @@ public class sistemanomina {
                     break;
             } //cierre switch
 
-        }
+        } 
 
     } //main
 
